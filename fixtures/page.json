@@ -1,0 +1,9 @@
+{
+  "pageid": 1,
+  "title": "滤芯说明",
+  "revid": 10,
+  "text": "额定净水量：{{Capacity}}",
+  "templates": [
+    "Template:Capacity"
+  ]
+}

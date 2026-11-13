@@ -1,0 +1,21 @@
+{
+  "/page/1": {
+    "file": "page.json"
+  },
+  "/parse/1?oldid=10": [
+    {
+      "file": "parse-v1.json"
+    },
+    {
+      "file": "parse-v2.json"
+    }
+  ],
+  "/template/Capacity": [
+    {
+      "file": "template-v1.json"
+    },
+    {
+      "file": "template-v2.json"
+    }
+  ]
+}
