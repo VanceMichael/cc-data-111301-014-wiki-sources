@@ -31,6 +31,27 @@ def archive_file(source, destination):
             temporary.unlink(missing_ok=True)
 
 
+def archive_bytes(data, destination):
+    destination = Path(destination)
+    destination.mkdir(parents=True, exist_ok=True)
+    identifier = hashlib.sha256(data).hexdigest()
+    target = destination / identifier
+    if not target.exists():
+        temporary = None
+        try:
+            with tempfile.NamedTemporaryFile(dir=destination, delete=False) as writer:
+                temporary = Path(writer.name)
+                writer.write(data)
+                writer.flush()
+                os.fsync(writer.fileno())
+            os.replace(temporary, target)
+            temporary = None
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
+    return {'sha256': identifier, 'bytes': len(data), 'object': str(target)}
+
+
 def read_object(destination, identifier):
     if len(identifier) != 64 or any(character not in '0123456789abcdef' for character in identifier):
         raise ValueError('对象摘要格式不正确')

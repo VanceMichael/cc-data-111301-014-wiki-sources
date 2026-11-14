@@ -1,0 +1,18 @@
+{
+  "pageid": 2,
+  "revid": 15,
+  "html": "<p>整机净水量：1800升。安装参见手册。</p>",
+  "categories": [
+    "整机"
+  ],
+  "dependencies": [
+    {
+      "title": "Template:Capacity",
+      "revid": 21
+    },
+    {
+      "title": "Template:Manual",
+      "revid": 25
+    }
+  ]
+}

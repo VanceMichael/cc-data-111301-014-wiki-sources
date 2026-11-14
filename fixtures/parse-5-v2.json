@@ -1,0 +1,10 @@
+{
+  "pageid": 5,
+  "revid": 50,
+  "html": "<p>这是分类示例页面。</p>",
+  "categories": [
+    "示例",
+    "2026年目录"
+  ],
+  "dependencies": []
+}

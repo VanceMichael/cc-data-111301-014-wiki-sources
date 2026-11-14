@@ -3,7 +3,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from wiki_sources.archive import archive_file, read_object
+from wiki_sources.archive import archive_bytes, archive_file, read_object
 
 
 class ArchiveTests(unittest.TestCase):
@@ -52,3 +52,11 @@ class ArchiveTests(unittest.TestCase):
             with self.assertRaises(FileNotFoundError):
                 archive_file(root / 'missing', root / 'archive')
             self.assertEqual(list((root / 'archive').iterdir()), [])
+
+    def test_archive_bytes_roundtrip_and_dedup(self):
+        with tempfile.TemporaryDirectory() as directory:
+            result = archive_bytes(b'abc', Path(directory))
+            self.assertEqual(read_object(directory, result['sha256']), b'abc')
+            again = archive_bytes(b'abc', Path(directory))
+            self.assertEqual(result['sha256'], again['sha256'])
+            self.assertEqual(len(list(Path(directory).iterdir())), 1)

@@ -1,0 +1,14 @@
+{
+  "pageid": 6,
+  "revid": 60,
+  "html": "<p>维护周期：每六个月。</p>",
+  "categories": [
+    "维护"
+  ],
+  "dependencies": [
+    {
+      "title": "Template:Manual",
+      "revid": 25
+    }
+  ]
+}

@@ -2,12 +2,54 @@
   "/page/1": {
     "file": "page.json"
   },
+  "/page/2": {
+    "file": "page2.json"
+  },
+  "/page/3": {
+    "file": "page3.json"
+  },
+  "/page/4": {
+    "file": "page4.json"
+  },
+  "/page/5": {
+    "file": "page5.json"
+  },
+  "/page/6": {
+    "file": "page6.json"
+  },
   "/parse/1?oldid=10": [
     {
       "file": "parse-v1.json"
     },
     {
       "file": "parse-v2.json"
+    }
+  ],
+  "/parse/2?oldid=15": [
+    {
+      "file": "parse-2-v1.json"
+    },
+    {
+      "file": "parse-2-v2.json"
+    }
+  ],
+  "/parse/4?oldid=40": {
+    "file": "parse-4.json"
+  },
+  "/parse/5?oldid=50": [
+    {
+      "file": "parse-5-v1.json"
+    },
+    {
+      "file": "parse-5-v2.json"
+    }
+  ],
+  "/parse/6?oldid=60": [
+    {
+      "file": "parse-6-v1.json"
+    },
+    {
+      "status": 500
     }
   ],
   "/template/Capacity": [
@@ -17,5 +59,11 @@
     {
       "file": "template-v2.json"
     }
-  ]
+  ],
+  "/template/Manual": {
+    "file": "template-manual.json"
+  },
+  "/module/Conversion": {
+    "file": "module-conversion.json"
+  }
 }

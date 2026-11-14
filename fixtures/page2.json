@@ -1,0 +1,10 @@
+{
+  "pageid": 2,
+  "title": "净水器整机",
+  "revid": 15,
+  "text": "整机净水量：{{Capacity}}。安装参见{{Manual}}。",
+  "templates": [
+    "Template:Capacity",
+    "Template:Manual"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pageid": 4,
+  "title": "异常依赖示例",
+  "revid": 40,
+  "text": "外部规格：{{ExternalSpec}}；循环：{{Loop}}；内部：{{Internal}}；已删：{{Removed}}。",
+  "templates": [
+    "Template:ExternalSpec",
+    "Template:Loop",
+    "Template:Internal",
+    "Template:Removed"
+  ]
+}

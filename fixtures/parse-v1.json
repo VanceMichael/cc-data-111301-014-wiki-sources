@@ -2,10 +2,17 @@
   "pageid": 1,
   "revid": 10,
   "html": "<p>额定净水量：2000升</p>",
-  "templates": [
+  "categories": [
+    "滤芯"
+  ],
+  "dependencies": [
     {
       "title": "Template:Capacity",
       "revid": 20
+    },
+    {
+      "title": "Module:Conversion",
+      "revid": 30
     }
   ]
 }

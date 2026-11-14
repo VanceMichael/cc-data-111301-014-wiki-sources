@@ -1,0 +1,25 @@
+{
+  "pageid": 4,
+  "revid": 40,
+  "html": "<p>外部规格：参见供应商页；循环：展开中止；内部：不可见；已删：缺失。</p>",
+  "categories": [
+    "示例"
+  ],
+  "dependencies": [
+    {
+      "title": "Template:ExternalSpec"
+    },
+    {
+      "title": "Template:Loop",
+      "error": "cycle"
+    },
+    {
+      "title": "Template:Internal",
+      "error": "denied"
+    },
+    {
+      "title": "Template:Removed",
+      "error": "deleted"
+    }
+  ]
+}

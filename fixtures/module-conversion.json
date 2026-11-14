@@ -1,0 +1,5 @@
+{
+  "title": "Module:Conversion",
+  "revid": 30,
+  "text": "-- 虚构数据模块，仅用于本地演练\nreturn { display = function(value) return value .. '升' end }"
+}
